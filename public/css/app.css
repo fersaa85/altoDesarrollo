@@ -1,0 +1,246 @@
+html, body {
+    background-color: #fff;
+    font-weight: 200;
+    height: 100vh;
+    color: #fff;
+    font-weight: bold;
+}
+
+.color-black{
+    color: #000000;
+}
+.color-white{
+    color: #fff !important
+}
+.color-brown{
+    color: #80620d;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.text-decoration-none{
+    text-decoration: none;
+    
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+/*
+NAV
+*/
+.navbar{
+    /*position: fixed;
+    z-index: 10;*/
+    width: 100%;
+}
+.bg-nav{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-item{
+    text-transform: uppercase;
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    color: #000;
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #80620d;
+}
+
+/*
+HOME
+*/
+
+.bg-home{
+    background: url("../images/portada-inicio-03.jpg");
+    background-size: cover;
+    background-position: center center;
+    min-height: 472px;
+}
+
+.bg-home-opacity{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-black{
+    background-color: #000000;
+}
+
+.bg-brown{
+    background-color: #80620d;
+}
+
+.icons{
+    width: 20px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.div-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-center{
+    width: 50%;
+    height: 50%;
+  }
+
+.div-bottom{
+    display: flex;
+    align-items: flex-end;
+}
+.bottom-div {
+    margin-top: auto;
+}
+
+/*
+GALLERY
+*/
+.gallery-text{
+    padding: 20px;
+}
+
+.btn{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.carousel-item{
+    min-height: 450px;
+}
+
+/*
+FORM HORIZONTAL
+*/
+.btn-form-horizontal{
+    padding: 10px 25px;
+}
+
+
+.img-video{
+    width: inherit;
+}
+
+
+/*
+MAP
+*/
+.bg-map{
+    background: url("../images/fondo-ubicacion-04.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+}
+.position-height{
+    height: 125px;
+}
+.div-top{
+    top: -23px
+}
+.div-shadow{
+    -webkit-box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.7);
+    box-shadow: 0px 10px 5px 5px rgba(0,0,0,0.7);
+}
+
+/*
+FORM
+*/
+.bg-form-contact{
+    background: url("../images/fondo-contacto-03.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.bg-white{
+    background: #fff;
+}
+
+.form-contact{
+    padding: 20px 40px;
+}
+input, textarea {
+
+    border-color: #80620d !important
+  }
+
+
+  /*
+  CARRUCEL
+  */
+  .list {
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+  }
+  
+  .list li {
+    list-style-type: none;
+    
+    width: 200px;
+    height: 200px;
+    opacity: .25;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 2px;
+    background: #9C89B8;
+    transition: transform 1s, opacity 1s;
+  }
+  
+  .list .act {
+    opacity: 1;
+  }
+  
+  .list .prev,
+  .list .next {
+    cursor: pointer;
+  }
+  
+  .list .prev {
+    transform: translateX(-220px) scale(.85);
+  }
+  
+  .list .next {
+    transform: translateX(220px) scale(.85);
+  }
+  
+  .list .hide {
+    transform: translateX(-420px) scale(.85);
+  }
+  
+  .list .new-next {
+    transform: translateX(420px) scale(.85);
+  }
+  
+  .list .hide,
+  .list .new-next {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+  }
+  
+  .swipe {
+    width: 270px;
+    height: 200px;
+    /*position: absolute;*/
+    background-color: green;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+  }
