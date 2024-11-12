@@ -21,6 +21,7 @@ class ContactController extends Controller
 
     public function __invoke(ContactRequest $request) {
 
+        return view('thankyou')->with(['name' => 'Blog Post Form Data Has Been inserted']);
         dd($request);
         Mail::to(env('MAIL_FROM_TO', "fersaavedra85@gmail.com"))->send(new WelcomeEmail([
             "name" => $request->get('name'),
@@ -31,7 +32,7 @@ class ContactController extends Controller
 
         $this->contactRepository->create($request->except(['_token']));
 
-        //eturn view('tankyou')->with(['name' => 'Blog Post Form Data Has Been inserted']);
+        return view('thankyou')->with(['name' => 'Blog Post Form Data Has Been inserted']);
     }
 
 }

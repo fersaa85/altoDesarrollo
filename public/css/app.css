@@ -244,3 +244,13 @@ input, textarea {
     transform: translate(-50%,-50%);
     opacity: 0;
   }
+
+
+  /*
+   * THANKYOU
+   */
+   .bg-thankyou{
+    background: url("../images/portada-casa--thankyou.jpg");
+    background-size: cover;
+    background-position: center center;
+   }

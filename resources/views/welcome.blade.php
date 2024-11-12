@@ -192,16 +192,16 @@
                         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
                         <div class="form-row">
                             <div class="col-md-3">
-                                <input type="text" class="form-control" placeholder="Nombre">
+                                <input type="text" class="form-control" placeholder="Nombre" name="name">
                             </div>
                             <div class="col-md-3">
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input type="email" class="form-control" placeholder="Email" name="email">
                             </div>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" placeholder="Teléfono">
+                                <input type="text" class="form-control" placeholder="Teléfono" name="phone">
                             </div>
                             <div class="col-md-3">
-                                <input type="text" class="form-control" placeholder="Mensaje">
+                                <input type="text" class="form-control" placeholder="Mensaje"  name="message">
                             </div>
                         </div>
                         <div class="form-row pt-3 pb-3">
@@ -345,19 +345,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6" >
-                    <form class="form-contact bg-white">
+                    <form action="{{ route('contact') }}" method="POST" enctype='multipart/form-data' class="form-contact bg-white">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                    
                         <p class="text-center color-brown"> ¡Solicita más información y asegura una visita en esta hermosa propiedad!</p>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre">
+                            <input type="text" class="form-control" placeholder="Nombre" name="name">
                          </div>
                          <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="email" class="form-control" placeholder="Email" name="email">
                          </div>
                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Teléfono">
+                            <input type="text" class="form-control" placeholder="Teléfono" name="phone">
                          </div>
                          <div class="form-group">
-                            <textarea class="form-control" placeholder="Mensaje"></textarea>
+                            <textarea class="form-control" placeholder="Mensaje" name="message"></textarea>
                          </div>
                          <div class="text-center">
                                 <button type="submit" class="btn bg-brown color-white btn-form-horizontal">ENVIAR</button>

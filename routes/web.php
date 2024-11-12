@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/gracias', function () {
+    return view('thankyou');
+})->name('thankyou');
+
 Route::post('contact', ContactController::class)->name('contact');
