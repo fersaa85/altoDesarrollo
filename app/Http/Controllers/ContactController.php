@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
-use App\Mail\WelcomeEmail;
+use App\Mail\ContactEmail;
 use App\Repositories\Contact\ContactRepositoryInterface;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,9 +21,7 @@ class ContactController extends Controller
 
     public function __invoke(ContactRequest $request) {
 
-        return view('thankyou')->with(['name' => 'Blog Post Form Data Has Been inserted']);
-        dd($request);
-        Mail::to(env('MAIL_FROM_TO', "fersaavedra85@gmail.com"))->send(new WelcomeEmail([
+        Mail::to(env('MAIL_FROM_TO', "fersaavedra85@gmail.com"))->send(new ContactEmail([
             "name" => $request->get('name'),
             "email" => $request->get('email'),
             "phone" => $request->get('phone'),

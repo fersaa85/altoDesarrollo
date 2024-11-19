@@ -105,8 +105,31 @@ ul {
 }
 
 /*
+WHATSAPP
+*/
+.position-fixed{
+    z-index: 10;
+}
+.whatsapp{
+    height: 150px;
+    width: 180px;
+    background-color:rgba(0, 0, 0, 0.5);
+    right: 0;
+    border-radius: 50px 0 0 50px;
+}
+.whatsapp-moviel{
+    right: 0;
+    bottom: 0;
+    margin: 15px
+}
+/*
 GALLERY
 */
+#carouselExampleIndicators{
+    height: 255px;
+    margin-top: 30%;
+}
+
 .gallery-text{
     padding: 20px;
 }
@@ -180,6 +203,47 @@ input, textarea {
   /*
   CARRUCEL
   */
+
+  .gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+#backBtn, #nextBtn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*
+
   .list {
     height: 200px;
     position: absolute;
@@ -236,7 +300,6 @@ input, textarea {
   .swipe {
     width: 270px;
     height: 200px;
-    /*position: absolute;*/
     background-color: green;
     border-radius: 2px;
     top: 50%;
@@ -245,7 +308,14 @@ input, textarea {
     opacity: 0;
   }
 
+.overflow-hidden{
+    overflow: hidden;
+} 
 
+.rotation{
+    height: inherit;
+}
+*/
   /*
    * THANKYOU
    */
@@ -254,3 +324,68 @@ input, textarea {
     background-size: cover;
     background-position: center center;
    }
+
+/*
+ * MODAL
+ */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 576px) {
+    .price{
+        font-size: xx-large;
+    }
+
+
+    .div-container{
+        display: block;
+    }
+
+    .position-height{
+        height: inherit;
+    }
+
+    .position-absolute, .position-relative {
+        position: inherit !important
+    }
+    .div-shadow{
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+        -moz-box-shadow: 0px 0px 0px 0px  rgba(0,0,0,0.0);
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+    }
+}

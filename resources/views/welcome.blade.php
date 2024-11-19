@@ -63,10 +63,29 @@
         </div>
      @endif
   
+ <!--
+    WHATSAPP
+    -->
+    <div class="position-fixed whatsapp d-none d-md-block">
+        <div class="text-center p-4 m4">
+            <a href="https://api.whatsapp.com/send?phone=524422260869&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank">
+                <img src="/images/whatsapp.png" />
+                <p class="color-white">Contactanos</p>
+            </a>
+        </div>   
+    </div>
+
+    <div class="position-fixed whatsapp-moviel d-sm-block d-md-none">
+        <a href="#" class="">
+            <img src="/images/whatsapp.png" width="50px"/>
+        </a>
+    </div>
+
+
     <!--
      HOME
      -->
-     <div class="container-fluid bg-home" id="home">
+     <div class="container-fluid bg-home d-none d-md-block" id="home" >
         <div class="row ">
             <div class="col-md-12 text-center pl-0 pr-0">
                 
@@ -81,7 +100,15 @@
              </div>
         </div>
     </div>
+    <div class="container-fluid d-sm-block d-md-none" id="home" >
+        <div class="row ">
+            <div class="col-md-12 text-center pl-0 pr-0">
+                <img src="/images/portada-inicio-03.jpg" width="100%" />
+            </div>
+        </div>
+    </div>
 
+   
     <!--
      GALLERY
      -->
@@ -102,15 +129,12 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
                         </ol>
                         <div class="carousel-inner">
+                            
                             <div class="carousel-item active">
-                                <img src="/images/gallery/casa1.jpeg" class="d-block w-100" alt="...">
-                             </div>
-                            <div class="carousel-item">
                                 <div class="d-flex justify-content-center">
                                     <img src="/images/gallery/casa2.jpeg" class="d-block w-100" alt="...">
                                 </div>
                              </div>
-                             <!--
                             <div class="carousel-item">
                                 <img src="/images/gallery/casa3.jpeg" class="d-block w-100" alt="...">
                             </div>
@@ -123,6 +147,12 @@
                             <div class="carousel-item">
                                 <img src="/images/gallery/casa6.jpeg" class="d-block w-100" alt="...">
                             </div>
+                            <!--
+                            <div class="carousel-item ">
+                                <img src="/images/gallery/casa1.jpeg" class="d-block w-100" alt="...">
+                             </div>
+                            -->
+                            <!--
                             <div class="carousel-item">
                                 <img src="/images/gallery/casa7.jpeg" class="d-block w-100" alt="...">
                             </div>
@@ -144,7 +174,7 @@
                         <div class="col-md-12">
                             <h3>FRACCIONAMIENTO VALLE TINTO 11</h3>
                             <p>Municipio de Corregidora, Querétaro.</p>
-                            <h1 class="color-black">$ 5,499,999.99MXN</h1>
+                            <h1 class="color-black price">$ 5,499,999.99MXN</h1>
 
                         </div>
                         <div class="col-md-8"> 
@@ -158,9 +188,6 @@
                                 <li><img src="/images/icons/sofa.png" class="icons" /> Family Room</li>
                                 <li><img src="/images/icons/coche.png" class="icons" /> 2 cajones de estacionamientos</li>
                             </ul>
-
-                            <a href="" class="color-white bg-black text-decoration-none btn">Agendar visita</a>
-                    
                         </div>
                          <div class="col-md-4 text-center div-container">
                             <div class="div-center">
@@ -168,6 +195,12 @@
                                 <p><b>244 m2</b></p> 
                             </div>
                         </div>
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                <a href="" class="color-white bg-black text-decoration-none btn">Agendar visita</a>
+                            </p>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -227,8 +260,52 @@
                     <p class="color-black">Tu nuevo Hogar</p>
                 </div>
                 <div class="col-md-8" >
+                    <!--
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                    </div>
+                    -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="/images/video/ACCESO TERRAZA VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/ALBERCA-TERRAZA CLUB VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/ALBERCA 2 VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/ALBERCA VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/CANCHAS MULTI USO VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/JUEGOS INFANTILES 2 VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/JUEGOS INFANTILES VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/TERRAZA CLUB 1 VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/VISTA ALBERCA VT.jpg" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="/images/video/ZONA ASADORES VT.jpg" />
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -243,12 +320,70 @@
 
      https://codepen.io/leusrox/pen/RgJKJx
      -->
-     <div class="container-fluid" id="progress">
-         <div class="position-relative">   
+     <div class="container" id="progress">
+
+        <div class="gallery-wrap">
+            <img src="images/back.png" id="backBtn">
+            <div class="gallery">
+                <div>
+                    <span><img src="/images/rotacion/IMG_2915.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2916.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2917.jpg" class="gallery-img"></span>
+                </div>
+                <div>
+                    <span><img src="/images/rotacion/IMG_2918.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2919.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2920.jpg" class="gallery-img"></span>
+                </div>
+                <div>
+                    <span><img src="/images/rotacion/IMG_2921.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2922.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2923.jpg" class="gallery-img"></span>
+                </div>
+                <div>
+                    <span><img src="/images/rotacion/IMG_2924.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2925.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2926.jpg" class="gallery-img"></span>
+                </div>
+                <div>
+                    <span><img src="/images/rotacion/IMG_2931.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2932.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2933.jpg" class="gallery-img"></span>
+                </div>
+                <div>
+                    <span><img src="/images/rotacion/IMG_2934.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2935.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_2936.jpg" class="gallery-img"></span>
+                </div>
+                <div>
+                    <span><img src="/images/rotacion/IMG_2937.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_3035.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_3036.jpg" class="gallery-img"></span>
+                </div>
+                <div>
+                    <span><img src="/images/rotacion/IMG_3037.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_3038.jpg" class="gallery-img"></span>
+                    <span><img src="/images/rotacion/IMG_3039.jpg" class="gallery-img"></span>
+                </div>
+            </div>
+            <img src="images/next.png" id="nextBtn">
+        </div>
+       
+     </div>
+     <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
+     <!--
+     <div class="container-fluid d-none d-md-block" id="progress" style="height: 400px">
+         <div class="position-relative rotation">   
             <ul class="list">
                 <li class="hide"></li>
                 <li class="prev"></li>
-                <li class="act"></li>
+                <li class="act">
+                   <img src="/images/rotacion/IMG_2917.jpg" width="200px"  height="200px"/>
+                </li>
                 <li class="next"></li>
                 <li class="new-next"></li>
             </ul>
@@ -258,6 +393,7 @@
         </div>
 
     </div>
+     -->
 
 
      <!--
@@ -389,18 +525,18 @@
                 </div>
                 <div class="col-md-4">
                     <div class="pt-2 pb-2">
-                        <a href="">
-                            <img src="/images/facebook.png" width="30px"  />
+                        <a href="https://www.facebook.com/GrupoAltoDesarrollos">
+                            <img src="/images/facebook.png" width="30px"  target="_blank"/>
                         </a>
-                        <a href="" class="color-white">
-                            <img src="/images/llamar.png"  width="30px" /> 442 324 6006
+                        <a href="https://api.whatsapp.com/send?phone=524422260869&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="color-white">
+                            <img src="/images/llamar.png"  width="30px" />442 226 0869
                         </a>
                     </div>
                     <div class="pt-2 pb-2">
-                        <a href="">
+                        <a href="https://www.instagram.com/alto_desarrollos/" target="_blank">
                             <img src="/images/instagram.png" width="30px"  />
                         </a>
-                        <a href="" class="color-white">
+                        <a href="mailto:info@altodesarrollo.com?Subject=Informes"  target="_blank" class="color-white">
                             <img src="/images/correo-electronico.png"  width="30px" /> info@altodesarrollo.com
                         </a>
                     </div>
@@ -411,11 +547,56 @@
 
 
         <!-- bootstrap -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+        <script>
+        $(document).ready(function() {
+            let $scrollContainer = $(".gallery");
+            let $backBtn = $("#backBtn");
+            let $nextBtn = $("#nextBtn");
+
+            $scrollContainer.on("wheel", function(evt) {
+                evt.preventDefault();
+                this.scrollLeft += evt.originalEvent.deltaY;
+                $(this).css("scroll-behavior", "auto");
+            });
+
+            $nextBtn.on("click", function() {
+                $scrollContainer.css("scroll-behavior", "smooth");
+                $scrollContainer[0].scrollLeft += 900;
+            });
+
+            $backBtn.on("click", function() {
+                $scrollContainer.css("scroll-behavior", "smooth");
+                $scrollContainer[0].scrollLeft -= 900;
+            });
+
+            $('.gallery-img').on('click', function() {
+                var src = $(this).attr('src');
+                $('#modalImage').attr('src', src);
+                $('#imageModal').fadeIn();
+            });
+
+            $('.close').on('click', function() {
+                $('#imageModal').fadeOut();
+            });
+
+            // Cerrar modal al hacer clic fuera de la imagen
+            $(window).on('click', function(event) {
+                if ($(event.target).is('#imageModal')) {
+                    $('#imageModal').fadeOut();
+                }
+            });
+        });
+
+       
+
+    </script>
         <script src="https://hammerjs.github.io/dist/hammer.js"></script>
         <script>
+            /*
         $(document).ready(function(){
             $(".nav-item").click(function(){
                 $(".nav-item").removeClass("active");
@@ -427,7 +608,7 @@
                     $(".hide").remove();
                 }
 
-                /* Step */
+                /* Step *
                 if ($(".prev").length) {
                     $(".prev").addClass("hide").removeClass("prev");
                 }
@@ -435,7 +616,7 @@
                 $(".act").addClass("prev").removeClass("act");
                 $(".next").addClass("act").removeClass("next");
 
-                /* New Next */
+                /* New Next *
                 $(".new-next").removeClass("new-next").addClass("next");
 
                 const addedEl = $("<li></li>");
@@ -447,13 +628,13 @@
             function prev() {
                 $(".new-next").remove();
 
-                /* Step */
+                /* Step *
                 $(".next").addClass("new-next");
 
                 $(".act").addClass("next").removeClass("act");
                 $(".prev").addClass("act").removeClass("prev");
 
-                /* New Prev */
+                /* New Prev *
                 $(".hide").addClass("prev").removeClass("hide");
 
                 const addedEl = $("<li></li>");
@@ -462,11 +643,11 @@
             }
 
             const slide = (element) => {
-                /* Next slide */
+                /* Next slide *
                 if ($(element).hasClass('next')) {
                 next();
 
-                /* Previous slide */
+                /* Previous slide *
                 } else if ($(element).hasClass('prev')) {
                 prev();
                 }
@@ -488,7 +669,7 @@
             });
 
         });
-        
+        */
         </script>
     
     </body>
