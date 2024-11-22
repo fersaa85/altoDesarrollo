@@ -255,11 +255,11 @@
      -->
      <div class="container pt-4 pb-4" id="valley">
             <div class="row">
-                <div class="col-md-5 text-center" >
+                <div class="col-md-4 text-center" >
                     <img src="/images/texto-valletinto-02.png"  class="img-video"/>
                     <p class="color-black">Tu nuevo Hogar</p>
                 </div>
-                <div class="col-md-7" >
+                <div class="col-md-8" >
                     <!--
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
