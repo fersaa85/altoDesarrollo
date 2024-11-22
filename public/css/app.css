@@ -141,9 +141,6 @@ GALLERY
     font-weight: bold;
 }
 
-.carousel-item{
-    min-height: 450px;
-}
 
 /*
 FORM HORIZONTAL
@@ -371,6 +368,9 @@ input, textarea {
         font-size: xx-large;
     }
 
+    .gallery-wrap-moviel img{
+        width: 50%;
+    }
 
     .div-container{
         display: block;

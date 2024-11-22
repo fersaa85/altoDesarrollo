@@ -103,7 +103,7 @@
     <div class="container-fluid d-sm-block d-md-none" id="home" >
         <div class="row ">
             <div class="col-md-12 text-center pl-0 pr-0">
-                <img src="/images/portada-inicio-03.jpg" width="100%" />
+                <img src="/images/portada-inicio-03.png" width="100%" />
             </div>
         </div>
     </div>
@@ -315,62 +315,98 @@
 
      <!--
      CARRUCEL
-
-     https://freefrontend.com/javascript-carousels/
-
-     https://codepen.io/leusrox/pen/RgJKJx
      -->
      <div class="container" id="progress">
+        <div class="gallery-wrap d-none d-md-block">
 
-        <div class="gallery-wrap">
-            <img src="images/back.png" id="backBtn">
-            <div class="gallery">
-                <div>
-                    <span><img src="/images/rotacion/IMG_2915.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2916.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2917.jpg" class="gallery-img"></span>
-                </div>
-                <div>
-                    <span><img src="/images/rotacion/IMG_2918.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2919.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2920.jpg" class="gallery-img"></span>
-                </div>
-                <div>
-                    <span><img src="/images/rotacion/IMG_2921.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2922.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2923.jpg" class="gallery-img"></span>
-                </div>
-                <div>
-                    <span><img src="/images/rotacion/IMG_2924.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2925.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2926.jpg" class="gallery-img"></span>
-                </div>
-                <div>
-                    <span><img src="/images/rotacion/IMG_2931.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2932.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2933.jpg" class="gallery-img"></span>
-                </div>
-                <div>
-                    <span><img src="/images/rotacion/IMG_2934.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2935.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_2936.jpg" class="gallery-img"></span>
-                </div>
-                <div>
-                    <span><img src="/images/rotacion/IMG_2937.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_3035.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_3036.jpg" class="gallery-img"></span>
-                </div>
-                <div>
-                    <span><img src="/images/rotacion/IMG_3037.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_3038.jpg" class="gallery-img"></span>
-                    <span><img src="/images/rotacion/IMG_3039.jpg" class="gallery-img"></span>
-                </div>
+            <div id="carrucel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2916.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2917.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2921.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2923.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2925.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2926.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2931.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2932.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2934.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_2935.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_3038.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                    <div class="col-md-3 text-center">
+                                        <img src="/images/rotacion/IMG_3039.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <a class="carousel-control-prev" href="#carrucel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carrucel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
             </div>
-            <img src="images/next.png" id="nextBtn">
+
+      
+        <div class="gallery-wrap-moviel d-flex overflow-hidden d-sm-block d-md-none" style="width: 100%; position: relative;">
+            <div class="gallery d-flex" style="transition: transform 0.5s ease;">
+                <img src="/images/rotacion/moviel/IMG_2915.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_2918.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_2919.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_2920.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_2922.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_2924.jpg" class="gallery-img img-fluid rounded">
+
+                <img src="/images/rotacion/moviel/IMG_2933.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_2936.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_2937.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_3035.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_3036.jpg" class="gallery-img img-fluid rounded">
+                <img src="/images/rotacion/moviel/IMG_3037.jpg" class="gallery-img img-fluid rounded">       
+            </div>
+           
         </div>
        
      </div>
-     <div id="imageModal" class="modal">
+        <div id="imageModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="modalImage">
         </div>
@@ -571,6 +607,7 @@
             $backBtn.on("click", function() {
                 $scrollContainer.css("scroll-behavior", "smooth");
                 $scrollContainer[0].scrollLeft -= 900;
+                console.log("back");
             });
 
             $('.gallery-img').on('click', function() {
