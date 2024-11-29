@@ -15,14 +15,14 @@
 
         <!-- bootstrap --> 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/app.css?v=0.0.2">
+        <link rel="stylesheet" href="./css/app.css?v=0.0.3">
     </head>
     <body class="antialiased">
         
     <nav class="navbar navbar-expand-lg navbar-light container bg-nav">
         
                 <a class="navbar-brand" href="#">
-                    <img src="/images/AD-dorado_logo.png" width="150px" />
+                    <img src="./images/AD-dorado_logo.png" width="150px" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,7 +52,6 @@
                     </ul>
                 </div>
 
-           
     </nav>
   
     @if($errors->any())
@@ -69,7 +68,7 @@
     <div class="position-fixed whatsapp d-none d-md-block">
         <div class="text-center p-4 m4">
             <a href="https://api.whatsapp.com/send?phone=524422260869&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank">
-                <img src="/images/whatsapp.png" />
+                <img src="./images/whatsapp.png" />
                 <p class="color-white">Contactanos</p>
             </a>
         </div>   
@@ -77,7 +76,7 @@
 
     <div class="position-fixed whatsapp-moviel d-sm-block d-md-none">
         <a href="#" class="">
-            <img src="/images/whatsapp.png" width="50px"/>
+            <img src="./images/whatsapp.png" width="50px"/>
         </a>
     </div>
 
@@ -103,7 +102,7 @@
     <div class="container-fluid d-sm-block d-md-none" id="home" >
         <div class="row ">
             <div class="col-md-12 text-center pl-0 pr-0">
-                <img src="/images/portada-inicio-03.png" width="100%" />
+                <img src="./images/portada-inicio-03.png" width="100%" />
             </div>
         </div>
     </div>
@@ -132,29 +131,29 @@
                             
                             <div class="carousel-item active">
                                 <div class="d-flex justify-content-center">
-                                    <img src="/images/gallery/casa2.jpeg" class="d-block w-100" alt="...">
+                                    <img src="./images/gallery/casa2.jpeg" class="d-block w-100" alt="...">
                                 </div>
                              </div>
                             <div class="carousel-item">
-                                <img src="/images/gallery/casa3.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/gallery/casa3.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/gallery/casa4.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/gallery/casa4.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/gallery/casa5.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/gallery/casa5.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="/images/gallery/casa6.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/gallery/casa6.jpeg" class="d-block w-100" alt="...">
                             </div>
                             <!--
                             <div class="carousel-item ">
-                                <img src="/images/gallery/casa1.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/gallery/casa1.jpeg" class="d-block w-100" alt="...">
                              </div>
                             -->
                             <!--
                             <div class="carousel-item">
-                                <img src="/images/gallery/casa7.jpeg" class="d-block w-100" alt="...">
+                                <img src="./images/gallery/casa7.jpeg" class="d-block w-100" alt="...">
                             </div>
                             -->
                         </div>
@@ -179,19 +178,19 @@
                         </div>
                         <div class="col-md-8"> 
                             <ul>
-                                <li><img src="/images/icons/mesa-del-comedor.png" class="icons" /> Recibidor / Sala / Comedor Cocina + Alacena</li>
-                                <li><img src="/images/icons/estufa-de-cocina.png" class="icons" /> Cocina + Alacena</li>
-                                <li><img src="/images/icons/cama.png" class="icons" /> 3 recamaras (una 4° posible) /
-                                <li><img src="/images/icons/inodoro.png" class="icons" /> Baño completo</li>
-                                <li><img src="/images/icons/terraza.png" class="icons" /> Jardín y Roof Garden</li>
-                                <li><img src="/images/icons/lavadora.png" class="icons" /> Cuarto de lavado</li>
-                                <li><img src="/images/icons/sofa.png" class="icons" /> Family Room</li>
-                                <li><img src="/images/icons/coche.png" class="icons" /> 2 cajones de estacionamientos</li>
+                                <li><img src="./images/icons/mesa-del-comedor.png" class="icons" /> Recibidor / Sala / Comedor Cocina + Alacena</li>
+                                <li><img src="./images/icons/estufa-de-cocina.png" class="icons" /> Cocina + Alacena</li>
+                                <li><img src="./images/icons/cama.png" class="icons" /> 3 recamaras (una 4° posible) /
+                                <li><img src="./images/icons/inodoro.png" class="icons" /> Baño completo</li>
+                                <li><img src="./images/icons/terraza.png" class="icons" /> Jardín y Roof Garden</li>
+                                <li><img src="./images/icons/lavadora.png" class="icons" /> Cuarto de lavado</li>
+                                <li><img src="./images/icons/sofa.png" class="icons" /> Family Room</li>
+                                <li><img src="./images/icons/coche.png" class="icons" /> 2 cajones de estacionamientos</li>
                             </ul>
                         </div>
                          <div class="col-md-4 text-center div-container">
                             <div class="div-center">
-                                <img src="/images/icons/medida.png" width="100%"/>
+                                <img src="./images/icons/medida.png" width="100%"/>
                                 <p><b>244 m2</b></p> 
                             </div>
                         </div>
@@ -256,7 +255,7 @@
      <div class="container pt-4 pb-4" id="valley">
             <div class="row">
                 <div class="col-md-4 text-center" >
-                    <img src="/images/texto-valletinto-02.png"  class="img-video"/>
+                    <img src="./images/texto-valletinto-02.png"  class="img-video"/>
                     <p class="color-black">Tu nuevo Hogar</p>
                 </div>
                 <div class="col-md-8" >
@@ -268,34 +267,34 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="/images/video/ACCESO TERRAZA VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/ACCESO TERRAZA VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/ALBERCA-TERRAZA CLUB VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/ALBERCA-TERRAZA CLUB VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/ALBERCA 2 VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/ALBERCA 2 VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/ALBERCA VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/ALBERCA VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/CANCHAS MULTI USO VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/CANCHAS MULTI USO VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/JUEGOS INFANTILES 2 VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/JUEGOS INFANTILES 2 VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/JUEGOS INFANTILES VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/JUEGOS INFANTILES VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/TERRAZA CLUB 1 VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/TERRAZA CLUB 1 VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/VISTA ALBERCA VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/VISTA ALBERCA VT.jpg" />
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/images/video/ZONA ASADORES VT.jpg" />
+                                <img class="d-block w-100" src="./images/video/ZONA ASADORES VT.jpg" />
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -317,120 +316,64 @@
      CARRUCEL
      -->
      <div class="container" id="progress">
-        <div class="gallery-wrap d-none d-md-block">
+        <div class="gallery-wrap " d-none d-md-block>
 
             <div id="carrucel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2916.jpg" class="gallery-img img-fluid rounded">
+                                    <div class="col-md-12 text-center">
+                                        <img src="./images/render/const_1casa.jpg" class="gallery-img img-fluid rounded">
                                     </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2917.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2921.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2923.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2925.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2926.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2931.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2932.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2934.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_2935.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_3038.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-                                    <div class="col-md-3 text-center">
-                                        <img src="/images/rotacion/IMG_3039.jpg" class="gallery-img img-fluid rounded">
-                                    </div>
-
                                 </div>
                             </div>
                             
+                            <div class="carousel-item  text-center ">    
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <img src="./images/render/const_2cocina.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="carousel-item  text-center">    
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <img src="./images/render/const_3sala.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item  text-center"> 
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <img src="./images/render/const_4cuarto.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="carousel-item  text-center"> 
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <img src="./images/render/const_5roofgarden.jpg" class="gallery-img img-fluid rounded">
+                                    </div>
+                                </div> 
+                            </div>
+                            
                         </div>
-                        <a class="carousel-control-prev" href="#carrucel" role="button" data-slide="prev">
+                        <a class="carousel-control-prev color-black" href="#carrucel" role="button" data-slide="prev" >
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next" href="#carrucel" role="button" data-slide="next">
+                        <a class="carousel-control-next color-black" href="#carrucel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
             </div>
-
-      
-        <div class="gallery-wrap-moviel d-flex overflow-hidden d-sm-block d-md-none" style="width: 100%; position: relative;">
-            <div class="gallery d-flex" style="transition: transform 0.5s ease;">
-                <img src="/images/rotacion/moviel/IMG_2915.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_2918.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_2919.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_2920.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_2922.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_2924.jpg" class="gallery-img img-fluid rounded">
-
-                <img src="/images/rotacion/moviel/IMG_2933.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_2936.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_2937.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_3035.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_3036.jpg" class="gallery-img img-fluid rounded">
-                <img src="/images/rotacion/moviel/IMG_3037.jpg" class="gallery-img img-fluid rounded">       
-            </div>
-           
-        </div>
        
      </div>
         <div id="imageModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="modalImage">
         </div>
-
-     <!--
-     <div class="container-fluid d-none d-md-block" id="progress" style="height: 400px">
-         <div class="position-relative rotation">   
-            <ul class="list">
-                <li class="hide"></li>
-                <li class="prev"></li>
-                <li class="act">
-                   <img src="/images/rotacion/IMG_2917.jpg" width="200px"  height="200px"/>
-                </li>
-                <li class="next"></li>
-                <li class="new-next"></li>
-            </ul>
-
-            <div class="swipe"></div>
-        
-        </div>
-
-    </div>
-     -->
-
 
      <!--
      MAP
@@ -539,7 +482,7 @@
                     </form>
                 </div>
                 <div class="col-md-6" >
-                    <img src="/images/texto-valletinto-02.png"  class="img-video"/>
+                    <img src="./images/texto-valletinto-02.png"  class="img-video"/>
                 </div>
             </div>
         </div>
@@ -557,23 +500,23 @@
                     <p>Derechos reservados <br />Alto Desarrollos® 2024</p>
                 </div>
                 <div class="col-md-4 text-center" >
-                    <img src="/images/AD-blanco_logo.png"/>
+                    <img src="./images/AD-blanco_logo.png"/>
                 </div>
                 <div class="col-md-4">
                     <div class="pt-2 pb-2">
                         <a href="https://www.facebook.com/GrupoAltoDesarrollos">
-                            <img src="/images/facebook.png" width="30px"  target="_blank"/>
+                            <img src="./images/facebook.png" width="30px"  target="_blank"/>
                         </a>
                         <a href="https://api.whatsapp.com/send?phone=524422260869&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="color-white">
-                            <img src="/images/llamar.png"  width="30px" />442 226 0869
+                            <img src="./images/llamar.png"  width="30px" />442 226 0869
                         </a>
                     </div>
                     <div class="pt-2 pb-2">
                         <a href="https://www.instagram.com/alto_desarrollos/" target="_blank">
-                            <img src="/images/instagram.png" width="30px"  />
+                            <img src="./images/instagram.png" width="30px"  />
                         </a>
                         <a href="mailto:info@altodesarrollo.com?Subject=Informes"  target="_blank" class="color-white">
-                            <img src="/images/correo-electronico.png"  width="30px" /> info@altodesarrollo.com
+                            <img src="./images/correo-electronico.png"  width="30px" /> info@altodesarrollo.com
                         </a>
                     </div>
                 </div>
