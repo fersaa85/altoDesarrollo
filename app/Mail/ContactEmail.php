@@ -23,7 +23,7 @@ class ContactEmail extends Mailable
 
     public function build()
     {
-        return $this->from(env('MAIL_FROM_TO', "fersaavedra85@gmail.com"), 'Landing page')
+        return $this->from(env('MAIL_FROM_ADDRESS', "no-replay@gmail.com"), 'Landing page')
                     ->subject('Landing page')
                     ->view('emails.contact', ['data' =>  $this->data]);
     }

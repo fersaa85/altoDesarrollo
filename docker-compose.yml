@@ -1,0 +1,64 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: www
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: laravel-image
+    container_name: alto-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - app-network
+
+  mysql:
+    image: mysql:5.7
+    platform: linux/x86_64
+    container_name: alto-db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: alto
+      MYSQL_ROOT_PASSWORD: altoroot
+      MYSQL_PASSWORD: Q(qT7bD^x,0L
+      MYSQL_USER: alto
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+      UPLOAD_LIMIT: 64M
+    volumes:
+      - ./data:/etc/mysql/my.cnf
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: alto-nginx
+    restart: unless-stopped
+    ports:
+      - 81:80
+    volumes:
+      - ./:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - app-network
+
+  node:
+    image: node:alpine
+    container_name: alto-npm
+    restart: unless-stopped
+    tty: true
+    volumes:
+        - ./:/var/www
+    networks:
+        - app-network
+
+
+networks:
+  app-network:
+    driver: bridge

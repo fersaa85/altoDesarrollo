@@ -61,8 +61,19 @@
             @endforeach
         </div>
      @endif
+
+    <!--
+    MODAL PROMOTIONS
+    -->
+   <h1> {{$promotional_modal ?? ''}}</h1>
+    @if($promotional_modal)
+        <div id="promotionModal" class="modal">
+            <span class="close promotionModal-close">&times;</span>
+            <img class="modal-content"  src="./images/whatsapp.png" >
+        </div>
+    @endif
   
- <!--
+    <!--
     WHATSAPP
     -->
     <div class="position-fixed whatsapp d-none d-md-block">
@@ -370,10 +381,12 @@
             </div>
        
      </div>
+     
         <div id="imageModal" class="modal">
             <span class="close">&times;</span>
             <img class="modal-content" id="modalImage">
         </div>
+        
 
      <!--
      MAP
@@ -532,6 +545,12 @@
 
         <script>
         $(document).ready(function() {
+            $('#promotionModal').fadeIn(); 
+
+            $('.promotionModal-close').on('click', function() {
+                $('#promotionModal').fadeOut();
+            });
+
             let $scrollContainer = $(".gallery");
             let $backBtn = $("#backBtn");
             let $nextBtn = $("#nextBtn");
@@ -567,6 +586,10 @@
             $(window).on('click', function(event) {
                 if ($(event.target).is('#imageModal')) {
                     $('#imageModal').fadeOut();
+                }
+
+                if ($(event.target).is('#promotionModal')) {
+                    $('#promotionModal').fadeOut();
                 }
             });
         });
