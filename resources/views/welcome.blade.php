@@ -65,11 +65,10 @@
     <!--
     MODAL PROMOTIONS
     -->
-   <h1> {{$promotional_modal ?? ''}}</h1>
     @if($promotional_modal)
         <div id="promotionModal" class="modal">
             <span class="close promotionModal-close">&times;</span>
-            <img class="modal-content"  src="./images/whatsapp.png" >
+            <img class="modal-content"  src="{!! $promotional_modal !!}" >
         </div>
     @endif
   
