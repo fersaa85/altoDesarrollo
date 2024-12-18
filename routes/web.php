@@ -16,6 +16,9 @@ use App\Http\Controllers\ContactController;
 Route::get('/', function () {
     return view('welcome')->with(["promotional_modal" => env('PROMOTIONAL_MODAL', '')]);
 });
+Route::get('/villetinto', function () {
+    return view('landing')->with(["promotional_modal" => env('PROMOTIONAL_MODAL', '')]);
+});
 
 Route::get('/gracias', function () {
     return view('thankyou');
